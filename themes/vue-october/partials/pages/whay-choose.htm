@@ -9,6 +9,8 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+sortColumn = "created_at"
+sortDirection = "asc"
 ==
 <style>
     .avatar {
@@ -48,11 +50,11 @@ pageNumber = "{{ :page }}"
                                 <div class="content-inner">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <img class="img-fluid lazyload" data-src="{{ 'assets/images/tab-image-one.png'|theme }}" alt="image">
+                                            <img class="img-fluid lazyload" data-src="{{ '/storage/app/media/sayt%20sozlamlari%20suratlari/axborot_makoni.jpg'| resize(566) }}" alt="image">
                                             <div class="featured-icon-box icon-align-before-content mt_30 ml-auto">
                                                 <div class="featured-icon">
                                                     <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-style-square ttm-icon_element-color-skincolor ttm-icon_element-size-sm">
-                                                        <i class="flaticon-university-1"></i>
+                                                        <i class="flaticon-book"></i>
                                                     </div>
                                                 </div>
                                                 
@@ -148,7 +150,7 @@ pageNumber = "{{ :page }}"
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <img class="img-fluid lazyload" data-src="{{ 'assets/images/tab-image-one.png'|theme }}" alt="image">
+                                            <img class="img-fluid lazyload" data-src="{{ '/storage/app/media/sayt%20sozlamlari%20suratlari/ilmiy_maqolalar.png' }}" alt="image">
                                         </div>
                                     </div>
                                 </div><!-- content-inner end-->
@@ -181,7 +183,7 @@ pageNumber = "{{ :page }}"
                                                 <a class="ttm-btn ttm-btn-size-md ttm-btn-shape-square ttm-btn-style-border ttm-btn-color-dark" href="#">{{ "Barcha maqolalarni ko'rish"|_ }}</a>
                                             </div>
                                         </div>
-                                         <div class="col-md-4">
+                                         <div class="col-md-4" style="background: #f4f6f9 !important;">
                                             <div class="pt-15 pl-15 pr-15 pb-15 res-991-p-0 res-991-mt-20">
                                                 <h4 class="font-weight-normal"><strong style="color: #ff4f01;"> "Eng ko'p ko'rilgan"</strong> Foydalanuvchilar tomonidna eng ko'p etibor berilgan majmualar.</p>
                                                 <div class="pt-10 pb-30 res-991-pb-15">

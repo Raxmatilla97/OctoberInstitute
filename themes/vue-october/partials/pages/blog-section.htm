@@ -59,11 +59,22 @@ categoryPage = "home"
                                     <span class="ttm-meta-line cat-link"><i class="fa fa-tag"></i>{{ post.category.name }}</span>
                                 </div>
                                 <div class="post-title featured-title">
-                                    <h5><a href="/{{ postPage }}/{{ post.slug }}">{{ post.title }}</a></h5>
+                                    <h5 style=" margin-top: 5px; 
+                                    margin-bottom: 0; 
+                                    font-size: 24px; 
+                                    line-height: 34px; 
+                                    font-weight: 400; 
+                                    text-overflow: ellipsis; 
+                                    overflow: hidden; display: -webkit-box;
+                                    -webkit-line-clamp: 4 ;
+                                    -webkit-box-orient: vertical;"><a href="/{{ postPage }}/{{ post.slug }}"  >
+                                    {{ post.title }}
+                                    </a></h5>
+                                    
                                 </div>
-                                <div class="post-desc featured-desc">
-                                    {% if post.introductory %}<p>  {{ post.introductory|raw }}</p>{% endif %}
-                                </div>
+                               {# <div class="post-desc featured-desc">
+                                    {% if post.introductory %}<p>  {{ post.introductory|raw }} </p>{% endif %}
+                                </div>#}
                             </div>
                         </div><!-- featured-imagebox-post end-->
                         

@@ -1,11 +1,11 @@
+[viewBag]
+
 [builderDetails]
 modelClass = "Raxmatilla\BizHaqimizda\Models\Hisoblagich"
 identifierValue = 1
 modelKeyColumn = "id"
 displayColumn = "hisoblagich"
 notFoundMessage = "Record not found"
-
-[viewBag]
 ==
 {% set record = builderDetails.record %}
 {% set displayColumn = builderDetails.displayColumn %}
@@ -13,7 +13,7 @@ notFoundMessage = "Record not found"
 
  {% if record %}
 <!--fid-section-->
-        <section class="ttm-row fid-section ttm-bgcolor-darkgrey ttm-bg ttm-bgimage-yes bg-img4 clearfix" style="padding: 40px 0 40px; background-image: url({{ record.orqa_fon|media }});">
+        <section class="ttm-row fid-section ttm-bgcolor-darkgrey ttm-bg ttm-bgimage-yes bg-img4 clearfix" style="padding: 80px 0 80px; background-image: url({{ record.orqa_fon|media | resize (1900,337, { mode: 'crop', quality: '20' })}});">
             <div class="ttm-row-wrapper-bg-layer ttm-bg-layer"></div>
             <div class="container">
                 <!-- row -->
